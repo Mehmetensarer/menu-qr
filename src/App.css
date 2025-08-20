@@ -351,8 +351,11 @@
 }
 
 .light-theme .item-price {
-  background: rgba(255, 215, 0, 0.2);
-  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+  color: #333;
+  background: #ffd700;
+  border: 2px solid #ff6b35;
+  box-shadow: 0 2px 4px rgba(255, 107, 53, 0.3);
+  font-weight: bold;
 }
 
 /* Mobile Optimizations */
