@@ -542,9 +542,9 @@ const resources = {
       "bread_kofte_half": "রুটি সহ কোফতে (অর্ধেক)",
       "bread_kofte_quarter": "রুটি সহ কোফতে (চতুর্থাংশ)",
       "bread_kofte_three_quarter": "রুটি সহ কোফতে (তিন চতুর্থাংশ)",
-      "bread_kokorec_half": "রুটি সহ কোকোরেক (অর্ধেক)",
-      "bread_kokorec_quarter": "রুটি সহ কোকোরেক (চতুর্থাংশ)",
-      "bread_kokorec_three_quarter": "রুটি সহ কোকোরেক (তিন চতুর্থাংশ)",
+      "bread_kokorec_half": "রুটি সহ কੋকোরেক (অর্ধেক)",
+      "bread_kokorec_quarter": "রুটি সহ কੋকোরেক (চতুর্থাংশ)",
+      "bread_kokorec_three_quarter": "রুটি সহ কੋকোরেক (তিন চতুর্থাংশ)",
       
       "service_grills": "সেবা গ্রিল",
       "plain_kofte": "সাদা কোফতে (পরিমাণ)",
@@ -581,7 +581,7 @@ const resources = {
       "soda": "সোডা",
       "fruit_soda": "ফলের সোডা",
       "lemonade": "লেবুর রস",
-      "water": "পানি",
+      "water": "পাণি",
       
       "special": "বিশেষ",
       "watermelon_frozen": "তরমুজ ফ্রোজেন",
@@ -1705,11 +1705,11 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'tr',
-    fallbackLng: 'tr',
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false
     }
   });
 
-export default i18n; 
+export default i18n;

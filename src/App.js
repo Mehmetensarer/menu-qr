@@ -7,12 +7,17 @@ import Logo from './Logo';
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language || 'tr');
+  const [language, setLanguage] = useState(i18n.language || 'en');
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const handleLanguageChange = (e) => {
     const lang = e.target.value;
     setLanguage(lang);
     i18n.changeLanguage(lang);
+  };
+
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
   };
 
   const MenuCategory = ({ categoryKey, categoryData }) => (
@@ -21,7 +26,12 @@ function App() {
       <div className="menu-items">
         {categoryData.items.map((item, index) => (
           <div key={index} className="menu-item">
-            <span className="item-name">{t(item.key)}</span>
+            <div className="item-content">
+              <div className="item-image-placeholder">
+                {/* Fotoğraf buraya gelecek */}
+              </div>
+              <span className="item-name">{t(item.key)}</span>
+            </div>
             <span className="item-price">{item.price}₺</span>
           </div>
         ))}
@@ -30,8 +40,15 @@ function App() {
   );
 
   return (
-    <div className="App">
+    <div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
       <div className="menu-container">
+        {/* Theme Toggle */}
+        <div className="theme-toggle">
+          <button onClick={toggleTheme} className="theme-button">
+            {isDarkTheme ? '☀️' : '🌙'}
+          </button>
+        </div>
+
         {/* Logo */}
         <div className="logo-position">
           <Logo />
