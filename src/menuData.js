@@ -4,7 +4,12 @@ export const menuData = {
     items: [
       { key: "bread_kofte_half", price: 230 },
       { key: "bread_kofte_quarter", price: 120 },
-      { key: "bread_kofte_three_quarter", price: 360 },
+      { key: "bread_kofte_three_quarter", price: 360 }
+    ]
+  },
+  kokorec: {
+    title: "kokorec",
+    items: [
       { key: "bread_kokorec_half", price: 220 },
       { key: "bread_kokorec_quarter", price: 120 },
       { key: "bread_kokorec_three_quarter", price: 330 }
@@ -15,7 +20,12 @@ export const menuData = {
     items: [
       { key: "plain_kofte", price: 280 },
       { key: "yogurt_kofte", price: 380 },
-      { key: "tamekli_kofte", price: 380 },
+      { key: "tamekli_kofte", price: 380 }
+    ]
+  },
+  balaban: {
+    title: "balaban",
+    items: [
       { key: "balaban_kofte", price: 380 }
     ]
   },
@@ -60,14 +70,6 @@ export const menuData = {
       { key: "fruit_soda", price: 45 },
       { key: "lemonade", price: 100 },
       { key: "water", price: 15 }
-    ]
-  },
-  special: {
-    title: "special",
-    items: [
-      { key: "watermelon_frozen", price: 120 },
-      { key: "strawberry_frozen", price: 120 },
-      { key: "melon_frozen", price: 120 }
     ]
   },
   hot_drinks: {

@@ -9,6 +9,7 @@ function App() {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || 'en');
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleLanguageChange = (e) => {
     const lang = e.target.value;
@@ -20,6 +21,14 @@ function App() {
     setIsDarkTheme(!isDarkTheme);
   };
 
+  const handleCategoryClick = (categoryKey) => {
+    setSelectedCategory(categoryKey);
+  };
+
+  const handleBackToMenu = () => {
+    setSelectedCategory(null);
+  };
+
   const MenuCategory = ({ categoryKey, categoryData }) => (
     <div className="menu-category">
       <h3 className="category-title">{t(categoryData.title)}</h3>
@@ -28,13 +37,100 @@ function App() {
           <div key={index} className="menu-item">
             <div className="item-content">
               <div className="item-image-placeholder">
-                {/* Fotoğraf buraya gelecek */}
+                <img 
+                  src={`/images/${item.key}.jpg`} 
+                  alt={t(item.key)}
+                  className="item-image"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="image-placeholder">
+                  📷
+                </div>
               </div>
               <span className="item-name">{t(item.key)}</span>
             </div>
             <span className="item-price">{item.price}₺</span>
           </div>
         ))}
+      </div>
+    </div>
+  );
+
+  const MainMenu = () => (
+    <div className="main-menu">
+      <div className="menu-grid">
+        <div className="menu-category-card" onClick={() => handleCategoryClick('grills')}>
+          <div className="category-image">
+            <img src="/images/grills.jpg" alt="Ekmek Arası Köfteler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('grills')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('kokorec')}>
+          <div className="category-image">
+            <img src="/images/kokorec.jpg" alt="Ekmek Arası Kokoreçler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('kokorec')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('service_grills')}>
+          <div className="category-image">
+            <img src="/images/service_grills.jpg" alt="Sade Izgara Köfteler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('service_grills')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('balaban')}>
+          <div className="category-image">
+            <img src="/images/balaban.jpg" alt="Balaban Köfteler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('balaban')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('hamburgers')}>
+          <div className="category-image">
+            <img src="/images/hamburgers.jpg" alt="Hamburgerler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('hamburgers')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('snacks')}>
+          <div className="category-image">
+            <img src="/images/snacks.jpg" alt="Atıştırmalıklar" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('snacks')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('piyaz')}>
+          <div className="category-image">
+            <img src="/images/piyaz.jpg" alt="Piyaz (Salad)" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('piyaz')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('cold_drinks')}>
+          <div className="category-image">
+            <img src="/images/cold_drinks.jpg" alt="Soğuk İçecekler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('cold_drinks')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('hot_drinks')}>
+          <div className="category-image">
+            <img src="/images/hot_drinks.jpg" alt="Sıcak İçecekler" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('hot_drinks')}</h3>
+        </div>
+        
+        <div className="menu-category-card" onClick={() => handleCategoryClick('desserts')}>
+          <div className="category-image">
+            <img src="/images/desserts.jpg" alt="Tatlılar" className="category-img" />
+          </div>
+          <h3 className="category-card-title">{t('desserts')}</h3>
+        </div>
       </div>
     </div>
   );
@@ -98,23 +194,17 @@ function App() {
           </select>
         </div>
 
-        {/* Menu Content */}
-        <div className="menu-content">
-          <div className="menu-column">
-            <MenuCategory categoryKey="grills" categoryData={menuData.grills} />
-            <MenuCategory categoryKey="service_grills" categoryData={menuData.service_grills} />
-            <MenuCategory categoryKey="hamburgers" categoryData={menuData.hamburgers} />
-            <MenuCategory categoryKey="snacks" categoryData={menuData.snacks} />
-            <MenuCategory categoryKey="piyaz" categoryData={menuData.piyaz} />
+        {/* Content */}
+        {selectedCategory ? (
+          <div className="category-detail">
+            <button onClick={handleBackToMenu} className="back-button">
+              ← {t('back_to_menu')}
+            </button>
+            <MenuCategory categoryKey={selectedCategory} categoryData={menuData[selectedCategory]} />
           </div>
-          
-          <div className="menu-column">
-            <MenuCategory categoryKey="cold_drinks" categoryData={menuData.cold_drinks} />
-            <MenuCategory categoryKey="special" categoryData={menuData.special} />
-            <MenuCategory categoryKey="hot_drinks" categoryData={menuData.hot_drinks} />
-            <MenuCategory categoryKey="desserts" categoryData={menuData.desserts} />
-          </div>
-        </div>
+        ) : (
+          <MainMenu />
+        )}
       </div>
     </div>
   );

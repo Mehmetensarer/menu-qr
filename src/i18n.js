@@ -8,9 +8,21 @@ const resources = {
       "menu_title": "Menü",
       "select_language": "Dil Seçiniz",
       "welcome": "Hoşgeldiniz!",
+      "back_to_menu": "Ana Menüye Dön",
+      
+      // Ana Kategoriler
+      "grills": "Ekmek Arası Köfteler",
+      "kokorec": "Ekmek Arası Kokoreçler",
+      "service_grills": "Sade Izgara Köfteler",
+      "balaban": "Balaban Köfteler",
+      "hamburgers": "Hamburgerler",
+      "snacks": "Atıştırmalıklar",
+      "piyaz": "Piyaz (Salad)",
+      "cold_drinks": "Soğuk İçecekler",
+      "hot_drinks": "Sıcak İçecekler",
+      "desserts": "Tatlılar",
       
       // Izgaralar
-      "grills": "Izgaralar",
       "bread_kofte_half": "Ekmek Arası Köfte (Yarım)",
       "bread_kofte_quarter": "Ekmek Arası Köfte (Çeyrek)",
       "bread_kofte_three_quarter": "Ekmek Arası Köfte (Üç Çeyrek)",
@@ -19,20 +31,17 @@ const resources = {
       "bread_kokorec_three_quarter": "Ekmek Arası Kokoreç (Üç Çeyrek)",
       
       // Servis Izgaralar
-      "service_grills": "Servis Izgaralar",
       "plain_kofte": "Sade Köfte (Porsiyon)",
       "yogurt_kofte": "Yoğurtlu Köfte (Porsiyon)",
       "tamekli_kofte": "Tamekli Köfte (Porsiyon)",
       "balaban_kofte": "Balaban Köfte (Porsiyon)",
       
       // Hamburgerler
-      "hamburgers": "Hamburgerler",
       "hamburger": "Hamburger",
       "cheeseburger": "Cheeseburger",
       "hamburger_menu": "Hamburger Menü (Patates + İçecek)",
       
       // Atıştırmalıklar
-      "snacks": "Atıştırmalıklar",
       "breakfast": "Kahvaltı",
       "gozleme": "Gözleme",
       "sucuklu_toast": "Sucuklu Tost",
@@ -40,13 +49,11 @@ const resources = {
       "karisik_toast": "Karışık Tost",
       
       // Piyaz
-      "piyaz": "Piyaz",
       "piyaz_single": "Tek Kişilik",
       "piyaz_double": "Çift Kişilik",
       "piyaz_triple": "Üç Kişilik",
       
       // Soğuk İçecekler
-      "cold_drinks": "Soğuk İçecekler",
       "ayran": "Ayran",
       "cola": "Kola",
       "fanta": "Fanta",
@@ -60,14 +67,7 @@ const resources = {
       "lemonade": "Limonata",
       "water": "Su",
       
-      // Özel Special
-      "special": "Özel Special",
-      "watermelon_frozen": "Karpuz Frozen",
-      "strawberry_frozen": "Çilek Frozen",
-      "melon_frozen": "Kavun Frozen",
-      
       // Sıcak İçecekler
-      "hot_drinks": "Sıcak İçecekler",
       "tea": "Çay",
       "coffee": "Kahve",
       "menengic_coffee": "Menengiç Kahvesi",
@@ -78,7 +78,6 @@ const resources = {
       "filter_coffee": "Filtre Kahve",
       
       // Tatlı Çeşitleri
-      "desserts": "Tatlı Çeşitleri",
       "kunefe": "Künefe",
       "katmer": "Katmer",
       "sutlac": "Sütlaç"
@@ -90,9 +89,21 @@ const resources = {
       "menu_title": "Menu",
       "select_language": "Select Language",
       "welcome": "Welcome!",
+      "back_to_menu": "Back to Menu",
+      
+      // Main Categories
+      "grills": "Bread with Kofte",
+      "kokorec": "Bread with Kokorec",
+      "service_grills": "Plain Grilled Kofte",
+      "balaban": "Balaban Kofte",
+      "hamburgers": "Hamburgers",
+      "snacks": "Snacks",
+      "piyaz": "Piyaz (Salad)",
+      "cold_drinks": "Cold Drinks",
+      "hot_drinks": "Hot Drinks",
+      "desserts": "Desserts",
       
       // Grills
-      "grills": "Grills",
       "bread_kofte_half": "Bread with Kofte (Half)",
       "bread_kofte_quarter": "Bread with Kofte (Quarter)",
       "bread_kofte_three_quarter": "Bread with Kofte (Three Quarter)",
@@ -101,20 +112,17 @@ const resources = {
       "bread_kokorec_three_quarter": "Bread with Kokorec (Three Quarter)",
       
       // Service Grills
-      "service_grills": "Service Grills",
       "plain_kofte": "Plain Kofte (Portion)",
       "yogurt_kofte": "Yogurt Kofte (Portion)",
       "tamekli_kofte": "Tamekli Kofte (Portion)",
       "balaban_kofte": "Balaban Kofte (Portion)",
       
       // Hamburgers
-      "hamburgers": "Hamburgers",
       "hamburger": "Hamburger",
       "cheeseburger": "Cheeseburger",
       "hamburger_menu": "Hamburger Menu (Fries + Drink)",
       
       // Snacks
-      "snacks": "Snacks",
       "breakfast": "Breakfast",
       "gozleme": "Gozleme",
       "sucuklu_toast": "Sucuk Toast",
@@ -122,13 +130,11 @@ const resources = {
       "karisik_toast": "Mixed Toast",
       
       // Piyaz
-      "piyaz": "Piyaz",
       "piyaz_single": "Single Portion",
       "piyaz_double": "Double Portion",
       "piyaz_triple": "Triple Portion",
       
       // Cold Drinks
-      "cold_drinks": "Cold Drinks",
       "ayran": "Ayran",
       "cola": "Cola",
       "fanta": "Fanta",
@@ -142,14 +148,7 @@ const resources = {
       "lemonade": "Lemonade",
       "water": "Water",
       
-      // Special
-      "special": "Special",
-      "watermelon_frozen": "Watermelon Frozen",
-      "strawberry_frozen": "Strawberry Frozen",
-      "melon_frozen": "Melon Frozen",
-      
       // Hot Drinks
-      "hot_drinks": "Hot Drinks",
       "tea": "Tea",
       "coffee": "Coffee",
       "menengic_coffee": "Menengic Coffee",
@@ -160,7 +159,6 @@ const resources = {
       "filter_coffee": "Filter Coffee",
       
       // Desserts
-      "desserts": "Desserts",
       "kunefe": "Kunefe",
       "katmer": "Katmer",
       "sutlac": "Sutlac"
@@ -263,7 +261,7 @@ const resources = {
       "hamburgers": "हैमबर्गर",
       "hamburger": "हैमबर्गर",
       "cheeseburger": "चीज़बर्गर",
-      "hamburger_menu": "हैमबर्गर मेनू (फ्राइज़ + ड्रिंक)",
+      "hamburger_menu": "हॅम्बर्गर मेनू (फ्राइज़ + ड्रिंक)",
       
       "snacks": "स्नैक्स",
       "breakfast": "नाश्ता",
@@ -555,7 +553,7 @@ const resources = {
       "hamburgers": "হ্যামবার্গার",
       "hamburger": "হ্যামবার্গার",
       "cheeseburger": "চিজবার্গার",
-      "hamburger_menu": "হ্যামবার্গার মেনু (ফ্রাই + পানীয়)",
+      "hamburger_menu": "হ্যামবার্গার মেনু (ফ্রਾই + পানীয়)",
       
       "snacks": "স্ন্যাকস",
       "breakfast": "সকালের নাস্তা",
@@ -571,7 +569,7 @@ const resources = {
       
       "cold_drinks": "ঠান্ডা পানীয়",
       "ayran": "আয়রান",
-      "cola": "কোলা",
+      "cola": "কોলা",
       "fanta": "ফান্টা",
       "gazoz": "গাজোজ",
       "plain_gazoz": "সাদা গাজোজ",
@@ -584,9 +582,9 @@ const resources = {
       "water": "পাণি",
       
       "special": "বিশেষ",
-      "watermelon_frozen": "তরমুজ ফ্রোজেন",
-      "strawberry_frozen": "স্ট্রবেরি ফ্রোজেন",
-      "melon_frozen": "খরমুজ ফ্রোজেন",
+      "watermelon_frozen": "তরমুজ ফ্রোজેন",
+      "strawberry_frozen": "স্ট্রবেরি ফ্রোজેন",
+      "melon_frozen": "খরমুজ ফ্রোজેন",
       
       "hot_drinks": "গরম পানীয়",
       "tea": "চা",
@@ -1535,7 +1533,7 @@ const resources = {
       "special": "વિશેષ",
       "watermelon_frozen": "તરબૂજુ ફ્રોજેન",
       "strawberry_frozen": "સ્ટ્રોબેરી ફ્રોજેન",
-      "melon_frozen": "ખરબૂજુ ફ્રોજેન",
+      "melon_frozen": "ખરમુજ ફ્રોજેન",
       
       "hot_drinks": "ગરમ પીણીંક્સ",
       "tea": "ચાય",
@@ -1650,7 +1648,7 @@ const resources = {
       "hamburgers": "Гамбургери",
       "hamburger": "Гамбургер",
       "cheeseburger": "Чізбургер",
-      "hamburger_menu": "Меню гамбургера (Картопля + Напій)",
+      "hamburger_menu": "Меню гамбургера (Картофель + Напиток)",
       
       "snacks": "Закуски",
       "breakfast": "Завтрак",
@@ -1661,8 +1659,8 @@ const resources = {
       
       "piyaz": "Піяз",
       "piyaz_single": "Одинарна порція",
-      "piyaz_double": "Подвійна порція",
-      "piyaz_triple": "Тройна порція",
+      "piyaz_double": "Двойная порція",
+      "piyaz_triple": "Тройная порція",
       
       "cold_drinks": "Холодні напої",
       "ayran": "Айран",
