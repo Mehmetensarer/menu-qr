@@ -64,14 +64,14 @@ function App() {
       <div className="menu-grid">
         <div className="menu-category-card" onClick={() => handleCategoryClick('grills')}>
           <div className="category-image">
-            <img src="/images/grills.jpg" alt="Ekmek Arası Köfteler" className="category-img" />
+            <img src="/images/bread_kofte_half.jpg" alt="Ekmek Arası Köfteler" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('grills')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('kokorec')}>
           <div className="category-image">
-            <img src="/images/kokorec.jpg" alt="Ekmek Arası Kokoreçler" className="category-img" />
+            <img src="/images/bread_kokorec_half.jpg" alt="Ekmek Arası Kokoreçler" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('kokorec')}</h3>
         </div>
