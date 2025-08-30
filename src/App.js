@@ -205,6 +205,32 @@ function App() {
         ) : (
           <MainMenu />
         )}
+
+        {/* Product Modal */}
+        {selectedItem && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={closeModal}>×</button>
+              <div className="modal-image">
+                <img 
+                  src={`/images/${selectedItem.key}.jpg`} 
+                  alt={t(selectedItem.key)}
+                  className="modal-img"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="modal-placeholder">
+                  📷
+                </div>
+              </div>
+              <h3 className="modal-title">{t(selectedItem.key)}</h3>
+              <p className="modal-price">{selectedItem.price}₺</p>
+              <p className="modal-description">{selectedItem.description}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
