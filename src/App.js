@@ -10,6 +10,7 @@ function App() {
   const [language, setLanguage] = useState(i18n.language || 'en');
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleLanguageChange = (e) => {
     const lang = e.target.value;
@@ -27,6 +28,14 @@ function App() {
 
   const handleBackToMenu = () => {
     setSelectedCategory(null);
+  };
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
   };
 
   const MenuCategory = ({ categoryKey, categoryData }) => (
@@ -99,35 +108,35 @@ function App() {
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('snacks')}>
           <div className="category-image">
-            <img src="/images/snacks.jpg" alt="Atıştırmalıklar" className="category-img" />
+            <img src="/images/breakfast.jpg" alt="Atıştırmalıklar" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('snacks')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('piyaz')}>
           <div className="category-image">
-            <img src="/images/piyaz.jpg" alt="Piyaz (Salad)" className="category-img" />
+            <img src="/images/piyaz_single.jpg" alt="Piyaz (Salad)" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('piyaz')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('cold_drinks')}>
           <div className="category-image">
-            <img src="/images/cold_drinks.jpg" alt="Soğuk İçecekler" className="category-img" />
+            <img src="/images/ayran.jpg" alt="Soğuk İçecekler" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('cold_drinks')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('hot_drinks')}>
           <div className="category-image">
-            <img src="/images/hot_drinks.jpg" alt="Sıcak İçecekler" className="category-img" />
+            <img src="/images/tea.jpg" alt="Sıcak İçecekler" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('hot_drinks')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('desserts')}>
           <div className="category-image">
-            <img src="/images/desserts.jpg" alt="Tatlılar" className="category-img" />
+            <img src="/images/kunefe.jpg" alt="Tatlılar" className="category-img" />
           </div>
           <h3 className="category-card-title">{t('desserts')}</h3>
         </div>
