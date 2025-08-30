@@ -34,7 +34,7 @@ function App() {
       <h3 className="category-title">{t(categoryData.title)}</h3>
       <div className="menu-items">
         {categoryData.items.map((item, index) => (
-          <div key={index} className="menu-item">
+          <div key={index} className="menu-item" onClick={() => handleItemClick(item)}>
             <div className="item-content">
               <div className="item-image-placeholder">
                 <img 
