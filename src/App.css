@@ -389,22 +389,24 @@
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .menu-category-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid rgba(255, 107, 53, 0.3);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  height: 240px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 240px;
+  min-height: 250px;
+  max-height: 250px;
 }
 
 .light-theme .menu-category-card {
@@ -425,14 +427,15 @@
 
 .category-image {
   width: 100%;
-  height: 140px;
+  height: 150px;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   background: rgba(255, 107, 53, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .category-img {
@@ -449,11 +452,17 @@
 
 .category-card-title {
   color: #ff6b35;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1.2;
+  flex-shrink: 0;
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .light-theme .category-card-title {
@@ -546,12 +555,13 @@
   }
   
   .menu-category-card {
-    height: 220px;
-    min-height: 220px;
+    height: 230px;
+    min-height: 230px;
+    max-height: 230px;
   }
   
   .category-image {
-    height: 120px;
+    height: 130px;
   }
   
   .menu-content {
