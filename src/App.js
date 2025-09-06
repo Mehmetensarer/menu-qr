@@ -10,6 +10,7 @@ function App() {
   const [language, setLanguage] = useState(i18n.language || 'en');
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleLanguageChange = (e) => {
     const lang = e.target.value;
@@ -27,6 +28,15 @@ function App() {
 
   const handleBackToMenu = () => {
     setSelectedCategory(null);
+    setSelectedItem(null);
+  };
+
+  const handleItemClick = (item) => {
+    setSelectedItem(selectedItem && selectedItem.key === item.key ? null : item);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
   };
 
   const MenuCategory = ({ categoryKey, categoryData }) => (
@@ -34,25 +44,50 @@ function App() {
       <h3 className="category-title">{t(categoryData.title)}</h3>
       <div className="menu-items">
         {categoryData.items.map((item, index) => (
-          <div key={index} className="menu-item">
-            <div className="item-content">
-              <div className="item-image-placeholder">
-                <img 
-                  src={`/images/${item.key}.jpg`} 
-                  alt={t(item.key)}
-                  className="item-image"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="image-placeholder">
-                  📷
+          <div key={index} className="menu-item-container">
+            <div className="menu-item" onClick={() => handleItemClick(item)}>
+              <div className="item-content">
+                <div className="item-image-placeholder">
+                  <img 
+                    src={`/images/${item.key}.jpg`} 
+                    alt={t(item.key)}
+                    className="item-image"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="image-placeholder">
+                    📷
+                  </div>
+                </div>
+                <span className="item-name">{t(item.key)}</span>
+              </div>
+              <span className="item-price">{item.price}₺</span>
+            </div>
+            {selectedItem && selectedItem.key === item.key && (
+              <div className="item-detail">
+                <div className="detail-image">
+                  <img 
+                    src={`/images/${item.key}.jpg`} 
+                    alt={t(item.key)}
+                    className="detail-img"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="detail-placeholder">
+                    📷
+                  </div>
+                </div>
+                <div className="detail-info">
+                  <h4 className="detail-name">{t(item.key)}</h4>
+                  <p className="detail-price">{item.price}₺</p>
+                  <p className="detail-description">{item.description}</p>
                 </div>
               </div>
-              <span className="item-name">{t(item.key)}</span>
-            </div>
-            <span className="item-price">{item.price}₺</span>
+            )}
           </div>
         ))}
       </div>
@@ -206,31 +241,6 @@ function App() {
           <MainMenu />
         )}
 
-        {/* Product Modal */}
-        {selectedItem && (
-          <div className="modal-overlay" onClick={closeModal}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={closeModal}>×</button>
-              <div className="modal-image">
-                <img 
-                  src={`/images/${selectedItem.key}.jpg`} 
-                  alt={t(selectedItem.key)}
-                  className="modal-img"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="modal-placeholder">
-                  📷
-                </div>
-              </div>
-              <h3 className="modal-title">{t(selectedItem.key)}</h3>
-              <p className="modal-price">{selectedItem.price}₺</p>
-              <p className="modal-description">{selectedItem.description}</p>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

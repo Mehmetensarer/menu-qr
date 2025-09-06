@@ -400,6 +400,11 @@
   transition: all 0.3s ease;
   border: 2px solid rgba(255, 107, 53, 0.3);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
 }
 
 .light-theme .menu-category-card {
@@ -535,6 +540,14 @@
     padding: 15px;
     margin: 5px;
     border-radius: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .menu-category-card {
+    height: 200px;
+    min-height: 200px;
   }
   
   .menu-content {
@@ -871,4 +884,99 @@
 
 .dark-theme .menu-item:hover {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Inline Item Detail */
+.menu-item-container {
+  margin-bottom: 10px;
+}
+
+.item-detail {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 4px solid #e74c3c;
+  animation: slideDown 0.3s ease-out;
+}
+
+.dark-theme .item-detail {
+  background: #34495e;
+  border-left-color: #e74c3c;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-image {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-placeholder {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  font-size: 32px;
+  color: #6c757d;
+}
+
+.dark-theme .detail-placeholder {
+  background-color: #495057;
+  color: #adb5bd;
+}
+
+.detail-info {
+  text-align: left;
+}
+
+.detail-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.dark-theme .detail-name {
+  color: #ecf0f1;
+}
+
+.detail-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.detail-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+}
+
+.dark-theme .detail-description {
+  color: #bdc3c7;
 }
