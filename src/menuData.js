@@ -2,7 +2,7 @@ export const menuData = {
   grills: {
     title: "grills",
     items: [
-      { key: "bread_kofte_half", price: 230, description: "Taze ekmek arası ızgara köfte, özel baharatlarla marine edilmiş dana eti, geleneksel Türk mutfağının vazgeçilmez lezzeti." },
+      { key: "bread_kofte_half", price: 230, description: "🔥 Premium dana eti, özel baharat karışımı ile 24 saat marine edilmiş, taze fırın ekmeği arasında servis edilen nefis lezzet. Geleneksel Türk mutfağının en seçkin örneği!" },
       { key: "bread_kofte_quarter", price: 120, description: "Taze ekmek arası ızgara köfte, özel baharatlarla marine edilmiş dana eti, geleneksel Türk mutfağının vazgeçilmez lezzeti." },
       { key: "bread_kofte_three_quarter", price: 360, description: "Taze ekmek arası ızgara köfte, özel baharatlarla marine edilmiş dana eti, geleneksel Türk mutfağının vazgeçilmez lezzeti." }
     ]
@@ -32,9 +32,9 @@ export const menuData = {
   hamburgers: {
     title: "hamburgers",
     items: [
-      { key: "hamburger", price: 150, description: "Klasik hamburger, taze ekmek arası ızgara dana eti, marul, domates ve özel sos ile servis edilir." },
-      { key: "cheeseburger", price: 180, description: "Klasik cheeseburger, taze ekmek arası ızgara dana eti, eritilmiş peynir, marul, domates ve özel sos ile servis edilir." },
-      { key: "hamburger_menu", price: 260, description: "Hamburger menü, patates kızartması ve içecek ile birlikte servis edilir." }
+      { key: "hamburger", price: 150, description: "🍔 Klasik hamburger! Taze ekmek arası ızgara dana eti, çıtır marul, domates ve özel sos ile servis edilen geleneksel lezzet." },
+      { key: "cheeseburger", price: 180, description: "🧀 Premium cheeseburger! Taze ekmek arası ızgara dana eti, eritilmiş peynir, çıtır marul, domates ve özel sos ile servis edilen nefis lezzet." },
+      { key: "hamburger_menu", price: 260, description: "🍟 Hamburger menü! Premium hamburger, çıtır patates kızartması ve içecek ile birlikte servis edilen doyurucu menü." }
     ]
   },
   snacks: {
