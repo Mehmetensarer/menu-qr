@@ -39,6 +39,11 @@ function App() {
     setSelectedItem(null);
   };
 
+  const getImageSrc = (key) => {
+    // Önce .jpg, sonra .jpeg, sonra .png dene
+    return `/images/${key}.jpg`;
+  };
+
   const MenuCategory = ({ categoryKey, categoryData }) => (
     <div className="menu-category">
       <h3 className="category-title">{t(categoryData.title)}</h3>
@@ -48,15 +53,26 @@ function App() {
             <div className="menu-item" onClick={() => handleItemClick(item)}>
               <div className="item-content">
                 <div className="item-image-placeholder">
-                  <img 
-                    src={`/images/${item.key}.jpg`} 
-                    alt={t(item.key)}
-                    className="item-image"
-                    onError={(e) => {
+                <img 
+                  src={getImageSrc(item.key)} 
+                  alt={t(item.key)}
+                  className="item-image"
+                  onError={(e) => {
+                    // Önce .jpeg dene
+                    if (e.target.src.includes('.jpg')) {
+                      e.target.src = `/images/${item.key}.jpeg`;
+                    }
+                    // Sonra .png dene
+                    else if (e.target.src.includes('.jpeg')) {
+                      e.target.src = `/images/${item.key}.png`;
+                    }
+                    // Hiçbiri çalışmazsa placeholder göster
+                    else {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
+                    }
+                  }}
+                />
                   <div className="image-placeholder">
                     📷
                   </div>
@@ -69,12 +85,23 @@ function App() {
               <div className="item-detail">
                 <div className="detail-image">
                   <img 
-                    src={`/images/${item.key}.jpg`} 
+                    src={getImageSrc(item.key)} 
                     alt={t(item.key)}
                     className="detail-img"
                     onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
+                      // Önce .jpeg dene
+                      if (e.target.src.includes('.jpg')) {
+                        e.target.src = `/images/${item.key}.jpeg`;
+                      }
+                      // Sonra .png dene
+                      else if (e.target.src.includes('.jpeg')) {
+                        e.target.src = `/images/${item.key}.png`;
+                      }
+                      // Hiçbiri çalışmazsa placeholder göster
+                      else {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }
                     }}
                   />
                   <div className="detail-placeholder">
