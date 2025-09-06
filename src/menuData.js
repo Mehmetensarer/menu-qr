@@ -58,18 +58,21 @@ export const menuData = {
   cold_drinks: {
     title: "cold_drinks",
     items: [
-      { key: "ayran", price: 40, description: "🥛 Geleneksel Türk içeceği! Taze yoğurt ve su ile hazırlanmış ferahlatıcı lezzet." },
-      { key: "cola", price: 60, description: "🥤 Klasik kola! Soğuk ve ferahlatıcı içecek." },
-      { key: "fanta", price: 40, description: "🍊 Portakal aromalı gazlı içecek! Ferahlatıcı lezzet." },
-      { key: "gazoz", price: 40, description: "🥤 Geleneksel Türk gazozu! Ferahlatıcı ve lezzetli içecek." },
-      { key: "plain_gazoz", price: 40, description: "🥤 Sade gazoz! Doğal ve ferahlatıcı içecek." },
-      { key: "salgam", price: 50, description: "🥤 Geleneksel Türk içeceği! Turp suyu ile hazırlanmış özel lezzet." },
-      { key: "sira", price: 60, description: "🍇 Geleneksel Türk içeceği! Üzüm suyu ile hazırlanmış doğal lezzet." },
-      { key: "fruit_juice", price: 60, description: "🍹 Taze meyve suyu! Doğal ve sağlıklı içecek." },
-      { key: "soda", price: 30, description: "💧 Maden suyu! Doğal ve sağlıklı içecek." },
-      { key: "fruit_soda", price: 45, description: "🥤 Meyveli maden suyu! Ferahlatıcı ve lezzetli içecek." },
-      { key: "lemonade", price: 100, description: "🍋 Taze limonata! Doğal limon suyu ile hazırlanmış ferahlatıcı içecek." },
-      { key: "water", price: 15, description: "💧 Doğal kaynak suyu! Sağlıklı ve ferahlatıcı içecek." }
+      { key: "ayran_cam_susurluk", price: 40, description: "🥛 Susurluk ayranı! Cam şişede geleneksel Türk içeceği, taze yoğurt ve su ile hazırlanmış ferahlatıcı lezzet." },
+      { key: "ayran_cam_sutas", price: 40, description: "🥛 Sütas ayranı! Cam şişede geleneksel Türk içeceği, taze yoğurt ve su ile hazırlanmış ferahlatıcı lezzet." },
+      { key: "ayran_plastik_sutas", price: 35, description: "🥛 Sütas ayranı! Plastik şişede geleneksel Türk içeceği, taze yoğurt ve su ile hazırlanmış ferahlatıcı lezzet." },
+      { key: "beypazari_elma", price: 45, description: "🍎 Beypazarı elma! Doğal elma aromalı maden suyu, ferahlatıcı ve lezzetli içecek." },
+      { key: "beypazari_karadut", price: 45, description: "🫐 Beypazarı karadut! Doğal karadut aromalı maden suyu, ferahlatıcı ve lezzetli içecek." },
+      { key: "beypazari_karpuzcilek", price: 45, description: "🍉 Beypazarı karpuz-çilek! Doğal karpuz ve çilek aromalı maden suyu, ferahlatıcı ve lezzetli içecek." },
+      { key: "beypazari_sade", price: 40, description: "💧 Beypazarı sade! Doğal maden suyu, ferahlatıcı ve sağlıklı içecek." },
+      { key: "gazoz_nigde_sade", price: 40, description: "🥤 Niğde gazozu! Geleneksel Türk gazozu, ferahlatıcı ve lezzetli içecek." },
+      { key: "kola_turka", price: 60, description: "🥤 Kola Turka! Türk yapımı kola, soğuk ve ferahlatıcı içecek." },
+      { key: "limon_beypazari", price: 45, description: "🍋 Beypazarı limon! Doğal limon aromalı maden suyu, ferahlatıcı ve lezzetli içecek." },
+      { key: "meysu_karisik", price: 60, description: "🍹 Meysu karışık! Karışık meyve suyu, doğal ve sağlıklı içecek." },
+      { key: "meysu_seftali", price: 60, description: "🍑 Meysu şeftali! Şeftali meyve suyu, doğal ve sağlıklı içecek." },
+      { key: "salgam_acili_dogan", price: 50, description: "🥤 Doğanay acılı şalgam! Geleneksel Türk içeceği, turp suyu ile hazırlanmış özel lezzet." },
+      { key: "su_fuska", price: 15, description: "💧 Fuska su! Doğal kaynak suyu, sağlıklı ve ferahlatıcı içecek." },
+      { key: "limonata", price: 100, description: "🍋 Taze limonata! Doğal limon suyu ile hazırlanmış ferahlatıcı içecek." }
     ]
   },
   hot_drinks: {
