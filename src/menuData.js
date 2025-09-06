@@ -70,7 +70,7 @@ export const menuData = {
       { key: "limon_beypazari", price: 45, description: "🍋 Beypazarı limon! Doğal limon aromalı maden suyu, ferahlatıcı ve lezzetli içecek." },
       { key: "meysu_karisik", price: 60, description: "🍹 Meysu karışık! Karışık meyve suyu, doğal ve sağlıklı içecek." },
       { key: "meysu_seftali", price: 60, description: "🍑 Meysu şeftali! Şeftali meyve suyu, doğal ve sağlıklı içecek." },
-      { key: "salgam_acili_dogan", price: 50, description: "🥤 Doğanay acılı şalgam! Geleneksel Türk içeceği, turp suyu ile hazırlanmış özel lezzet." },
+      { key: "salgam_acılı_doganay", price: 50, description: "🥤 Doğanay acılı şalgam! Geleneksel Türk içeceği, turp suyu ile hazırlanmış özel lezzet." },
       { key: "su_fuska", price: 15, description: "💧 Fuska su! Doğal kaynak suyu, sağlıklı ve ferahlatıcı içecek." },
       { key: "limonata", price: 100, description: "🍋 Taze limonata! Doğal limon suyu ile hazırlanmış ferahlatıcı içecek." }
     ]

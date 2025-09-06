@@ -66,7 +66,7 @@ const resources = {
       "limon_beypazari": "Beypazarı Limon",
       "meysu_karisik": "Meysu Karışık",
       "meysu_seftali": "Meysu Şeftali",
-      "salgam_acili_dogan": "Doğanay Acılı Şalgam",
+      "salgam_acılı_doganay": "Doğanay Acılı Şalgam",
       "su_fuska": "Fuska Su",
       "lemonade": "Limonata",
       
@@ -150,7 +150,7 @@ const resources = {
       "limon_beypazari": "Beypazari Lemon",
       "meysu_karisik": "Meysu Mixed",
       "meysu_seftali": "Meysu Peach",
-      "salgam_acili_dogan": "Doganay Spicy Salgam",
+      "salgam_acılı_doganay": "Doganay Spicy Salgam",
       "su_fuska": "Fuska Water",
       "lemonade": "Lemonade",
       
