@@ -284,6 +284,7 @@ const resources = {
       "bread_kokorec_three_quarter": "面包夹烤肠（四分之三）",
       
       "service_grills": "服务烤肉",
+      "balaban": "巴拉班烤肉",
       "plain_kofte": "原味烤肉（份）",
       "yogurt_kofte": "酸奶烤肉（份）",
       "tamekli_kofte": "塔梅克烤肉（份）",
@@ -406,6 +407,7 @@ const resources = {
       "bread_kokorec_three_quarter": "ब्रेड के साथ कोकोरेक (तीन चौथाई)",
       
       "service_grills": "सर्विस ग्रिल",
+      "balaban": "बालाबान कोफ्ते",
       "plain_kofte": "सादा कोफ्ते (पोर्शन)",
       "yogurt_kofte": "दही कोफ्ते (पोर्शन)",
       "tamekli_kofte": "तामेकली कोफ्ते (पोर्शन)",
@@ -479,6 +481,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Pan con Kokoreç (Tres Cuartos)",
       
       "service_grills": "Parrillas de Servicio",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte Simple (Porción)",
       "yogurt_kofte": "Köfte con Yogur (Porción)",
       "tamekli_kofte": "Köfte Tamekli (Porción)",
@@ -601,6 +604,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Pain avec Kokoreç (Trois Quarts)",
       
       "service_grills": "Grills de Service",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte Nature (Portion)",
       "yogurt_kofte": "Köfte au Yaourt (Portion)",
       "tamekli_kofte": "Köfte Tamekli (Portion)",
@@ -723,6 +727,7 @@ const resources = {
       "bread_kokorec_three_quarter": "خبز مع الكوكوريك (ثلاثة أرباع)",
       
       "service_grills": "مشويات الخدمة",
+      "balaban": "كوفتة بالابان",
       "plain_kofte": "كوفتة عادية (حصة)",
       "yogurt_kofte": "كوفتة بالزبادي (حصة)",
       "tamekli_kofte": "كوفتة تامكلي (حصة)",
@@ -845,6 +850,7 @@ const resources = {
       "bread_kokorec_three_quarter": "রুটি সহ কੋকোরেক (তিন চতুর্থাংশ)",
       
       "service_grills": "সেবা গ্রিল",
+      "balaban": "বালাবান কোফতে",
       "plain_kofte": "সাদা কোফতে (পরিমাণ)",
       "yogurt_kofte": "দই কোফতে (পরিমাণ)",
       "tamekli_kofte": "তামেকলি কোফতে (পরিমাণ)",
@@ -918,6 +924,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Хлеб с кокореч (Три четверти)",
       
       "service_grills": "Сервисный гриль",
+      "balaban": "Балабан кёфте",
       "plain_kofte": "Простое кёфте (Порция)",
       "yogurt_kofte": "Кёфте с йогуртом (Порция)",
       "tamekli_kofte": "Кёфте тамекли (Порция)",
@@ -1040,6 +1047,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Pão com Kokoreç (Três Quartos)",
       
       "service_grills": "Churrasco de Serviço",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte Simples (Porção)",
       "yogurt_kofte": "Köfte com Iogurte (Porção)",
       "tamekli_kofte": "Köfte Tamekli (Porção)",
@@ -1113,6 +1121,7 @@ const resources = {
       "bread_kokorec_three_quarter": "روٹی سے کوکوریک (تین چارم)",
       
       "service_grills": "خدمت کی چوراش",
+      "balaban": "بالابان کوفٹے",
       "plain_kofte": "صرف کوفٹے (پوریشن)",
       "yogurt_kofte": "یوگورٹ کوفٹے (پوریشن)",
       "tamekli_kofte": "تامیکلی کوفٹے (پوریشن)",
@@ -1186,6 +1195,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Roti dengan Kokorek (Tiga Seperempat)",
       
       "service_grills": "Gorengan Layanan",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte Sederhana (Porsi)",
       "yogurt_kofte": "Köfte dengan Yogurt (Porsi)",
       "tamekli_kofte": "Köfte Tamekli (Porsi)",
@@ -1259,6 +1269,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Brot mit Kokorek (Drei Viertel)",
       
       "service_grills": "Service Grill",
+      "balaban": "Balaban Köfte",
       "plain_kofte": "Einfaches Köfte (Portion)",
       "yogurt_kofte": "Köfte mit Joghurt (Portion)",
       "tamekli_kofte": "Tamekli Köfte (Portion)",
@@ -1332,6 +1343,7 @@ const resources = {
       "bread_kokorec_three_quarter": "パンとココレック（四分の三）",
       
       "service_grills": "サービスグリル",
+      "balaban": "バラバンコフテ",
       "plain_kofte": "シンプルコフテ（ポールション）",
       "yogurt_kofte": "ヨーグルトコフテ（ポールション）",
       "tamekli_kofte": "タメクリコフテ（ポールション）",
@@ -1405,6 +1417,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Mchele na Kokorek (Nusu)",
       
       "service_grills": "Churrasco ya Kituo",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte Nzito (Porshi)",
       "yogurt_kofte": "Köfte na Yogurt (Porshi)",
       "tamekli_kofte": "Köfte Tamekli (Porshi)",
@@ -1478,6 +1491,7 @@ const resources = {
       "bread_kokorec_three_quarter": "रोटी सह कोकोरेक (तीन चौथा)",
       
       "service_grills": "सेवा ग्रिल",
+      "balaban": "बालाबान कोफ्ते",
       "plain_kofte": "सुदा कोफ्ते (पोर्शन)",
       "yogurt_kofte": "यूगर्ट कोफ्ते (पोर्शन)",
       "tamekli_kofte": "तामेकली कोफ्ते (पोर्शन)",
@@ -1551,6 +1565,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Bánh mì với Kokorek (Ba phần tư)",
       
       "service_grills": "Nướng dịch vụ",
+      "balaban": "Köfte Balaban",
       "plain_kofte": "Köfte đơn giản (Phần)",
       "yogurt_kofte": "Köfte sữa (Phần)",
       "tamekli_kofte": "Köfte Tamekli (Phần)",
@@ -1624,6 +1639,7 @@ const resources = {
       "bread_kokorec_three_quarter": "빵과 코코레크 (사분의 삼)",
       
       "service_grills": "서비스 구이",
+      "balaban": "발라반 코프테",
       "plain_kofte": "단순 코프테 (포르션)",
       "yogurt_kofte": "요거트 코프테 (포르션)",
       "tamekli_kofte": "타멕리 코프테 (포르션)",
@@ -1697,6 +1713,7 @@ const resources = {
       "bread_kokorec_three_quarter": "نان با کوکوریک (سه چهارم)",
       
       "service_grills": "گوساله خدمتی",
+      "balaban": "بالابان کوفته",
       "plain_kofte": "کوفته ساده (قسمت)",
       "yogurt_kofte": "کوفته با یوگورت (قسمت)",
       "tamekli_kofte": "کوفته تامکلی (قسمت)",
@@ -1770,6 +1787,7 @@ const resources = {
       "bread_kokorec_three_quarter": "ਰੂਟੀ ਸਹ ਕੋਕੋਰੇਕ (ਤਿਨ ਚਾਰਮ)",
       
       "service_grills": "ਸਰਵਿਸ ਗਰਲ",
+      "balaban": "ਬਾਲਾਬਾਨ ਕੋਫਤੇ",
       "plain_kofte": "ਸਾਦਾ ਕੋਫਤੇ (ਪੋਰਸ਼ਨ)",
       "yogurt_kofte": "ਦਹੀ ਕੋਫਤੇ (ਪੋਰਸ਼ਨ)",
       "tamekli_kofte": "ਤਾਮੇਕਲੀ ਕੋਫਤੇ (ਪੋਰਸ਼ਨ)",
@@ -1843,6 +1861,7 @@ const resources = {
       "bread_kokorec_three_quarter": "રોટી સાથે કોકોરેક (ત્રણ ચોથાં)",
       
       "service_grills": "સેવા ગ્રિલ",
+      "balaban": "બાલાબાન કોફ્તે",
       "plain_kofte": "સાદુ કોફ્તે (પોર્શન)",
       "yogurt_kofte": "દહી કોફ્તે (પોર્શન)",
       "tamekli_kofte": "તામેકલી કોફ્તે (પોર્શન)",
@@ -1916,6 +1935,7 @@ const resources = {
       "bread_kokorec_three_quarter": "റൂടി കൊക്കോറെക്ക് (മൂന്നിന്നിമിഷം)",
       
       "service_grills": "സേവ ഗ്രില്",
+      "balaban": "ബാലാബാന കൊഫ്റ്റേ",
       "plain_kofte": "സാദാ കൊഫ്റ്റേ (പോര്ശൺ)",
       "yogurt_kofte": "യൂഗൂറ്റ് കൊഫ്റ്റേ (പോര്ശൺ)",
       "tamekli_kofte": "താമേക്ലി കൊഫ്റ്റേ (പോര്ശൺ)",
@@ -1989,6 +2009,7 @@ const resources = {
       "bread_kokorec_three_quarter": "Хліб з кокорек (Три чверті)",
       
       "service_grills": "Сервісний гриль",
+      "balaban": "Балабан крофте",
       "plain_kofte": "Простий крофте (Порція)",
       "yogurt_kofte": "Крофте з йогуртом (Порція)",
       "tamekli_kofte": "Крофте тамеклі (Порція)",
