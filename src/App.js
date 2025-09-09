@@ -111,7 +111,7 @@ function App() {
                 <div className="detail-info">
                   <h4 className="detail-name">{t(item.key)}</h4>
                   <p className="detail-price">{item.price}₺</p>
-                  <p className="detail-description">{item.description}</p>
+                  <p className="detail-description">{t(`${item.key}_desc`)}</p>
                 </div>
               </div>
             )}
