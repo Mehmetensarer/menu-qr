@@ -276,6 +276,7 @@ const resources = {
       "welcome": "欢迎！",
       
       "grills": "烤肉",
+      "kokorec": "面包夹烤肠",
       "bread_kofte_half": "面包夹烤肉（半份）",
       "bread_kofte_quarter": "面包夹烤肉（四分之一）",
       "bread_kofte_three_quarter": "面包夹烤肉（四分之三）",
@@ -399,6 +400,7 @@ const resources = {
       "welcome": "स्वागत है!",
       
       "grills": "ग्रिल",
+      "kokorec": "कोकोरेक के साथ ब्रेड",
       "bread_kofte_half": "ब्रेड के साथ कोफ्ते (आधा)",
       "bread_kofte_quarter": "ब्रेड के साथ कोफ्ते (चौथाई)",
       "bread_kofte_three_quarter": "ब्रेड के साथ कोफ्ते (तीन चौथाई)",
@@ -473,6 +475,7 @@ const resources = {
       "welcome": "¡Bienvenido!",
       
       "grills": "Parrillas",
+      "kokorec": "Pan con Kokoreç",
       "bread_kofte_half": "Pan con Köfte (Mitad)",
       "bread_kofte_quarter": "Pan con Köfte (Cuarto)",
       "bread_kofte_three_quarter": "Pan con Köfte (Tres Cuartos)",
@@ -596,6 +599,7 @@ const resources = {
       "welcome": "Bienvenue !",
       
       "grills": "Grills",
+      "kokorec": "Pain avec Kokoreç",
       "bread_kofte_half": "Pain avec Köfte (Moitié)",
       "bread_kofte_quarter": "Pain avec Köfte (Quart)",
       "bread_kofte_three_quarter": "Pain avec Köfte (Trois Quarts)",
@@ -719,6 +723,7 @@ const resources = {
       "welcome": "مرحباً!",
       
       "grills": "المشويات",
+      "kokorec": "خبز مع الكوكوريك",
       "bread_kofte_half": "خبز مع الكوفتة (نصف)",
       "bread_kofte_quarter": "خبز مع الكوفتة (ربع)",
       "bread_kofte_three_quarter": "خبز مع الكوفتة (ثلاثة أرباع)",
@@ -842,6 +847,7 @@ const resources = {
       "welcome": "স্বাগতম!",
       
       "grills": "গ্রিল",
+      "kokorec": "কোকোরেক সহ রুটি",
       "bread_kofte_half": "রুটি সহ কোফতে (অর্ধেক)",
       "bread_kofte_quarter": "রুটি সহ কোফতে (চতুর্থাংশ)",
       "bread_kofte_three_quarter": "রুটি সহ কোফতে (তিন চতুর্থাংশ)",
@@ -916,6 +922,7 @@ const resources = {
       "welcome": "Добро пожаловать!",
       
       "grills": "Гриль",
+      "kokorec": "Хлеб с кокореч",
       "bread_kofte_half": "Хлеб с кёфте (Половина)",
       "bread_kofte_quarter": "Хлеб с кёфте (Четверть)",
       "bread_kofte_three_quarter": "Хлеб с кёфте (Три четверти)",
@@ -1039,6 +1046,7 @@ const resources = {
       "welcome": "Bem-vindo!",
       
       "grills": "Churrasco",
+      "kokorec": "Pão com Kokoreç",
       "bread_kofte_half": "Pão com Köfte (Metade)",
       "bread_kofte_quarter": "Pão com Köfte (Quarto)",
       "bread_kofte_three_quarter": "Pão com Köfte (Três Quartos)",
@@ -1113,6 +1121,7 @@ const resources = {
       "welcome": "ہمارے خانہ کو خوش آمدید!",
       
       "grills": "چوراش",
+      "kokorec": "کوکوریک کے ساتھ روٹی",
       "bread_kofte_half": "روٹی سے کوفٹے (نصف)",
       "bread_kofte_quarter": "روٹی سے کوفٹے (چارم)",
       "bread_kofte_three_quarter": "روٹی سے کوفٹے (تین چارم)",
@@ -1187,6 +1196,7 @@ const resources = {
       "welcome": "Selamat Datang!",
       
       "grills": "Gorengan",
+      "kokorec": "Roti dengan Kokorek",
       "bread_kofte_half": "Roti dengan Köfte (Setengah)",
       "bread_kofte_quarter": "Roti dengan Köfte (Seperempat)",
       "bread_kofte_three_quarter": "Roti dengan Köfte (Tiga Seperempat)",
@@ -1261,6 +1271,7 @@ const resources = {
       "welcome": "Willkommen!",
       
       "grills": "Grill",
+      "kokorec": "Brot mit Kokorek",
       "bread_kofte_half": "Brot mit Köfte (Halb)",
       "bread_kofte_quarter": "Brot mit Köfte (Viertel)",
       "bread_kofte_three_quarter": "Brot mit Köfte (Drei Viertel)",
@@ -1335,6 +1346,7 @@ const resources = {
       "welcome": "ようこそ！",
       
       "grills": "グリル",
+      "kokorec": "パンとココレック",
       "bread_kofte_half": "パンとコフテ（半分）",
       "bread_kofte_quarter": "パンとコフテ（四分の一）",
       "bread_kofte_three_quarter": "パンとコフテ（四分の三）",
@@ -1409,6 +1421,7 @@ const resources = {
       "welcome": "Karibu!",
       
       "grills": "Churrasco",
+      "kokorec": "Mchele na Kokorek",
       "bread_kofte_half": "Mchele na Köfte (Nusu)",
       "bread_kofte_quarter": "Mchele na Köfte (Nusu)",
       "bread_kofte_three_quarter": "Mchele na Köfte (Nusu)",
@@ -1483,6 +1496,7 @@ const resources = {
       "welcome": "स्वागत आहे!",
       
       "grills": "ग्रिल",
+      "kokorec": "कोकोरेक सह रोटी",
       "bread_kofte_half": "रोटी सह कोफ्ते (अर्धा)",
       "bread_kofte_quarter": "रोटी सह कोफ्ते (चौथा)",
       "bread_kofte_three_quarter": "रोटी सह कोफ्ते (तीन चौथा)",
@@ -1557,6 +1571,7 @@ const resources = {
       "welcome": "Chào mừng!",
       
       "grills": "Nướng",
+      "kokorec": "Bánh mì với Kokorek",
       "bread_kofte_half": "Bánh mì với Köfte (Nửa)",
       "bread_kofte_quarter": "Bánh mì với Köfte (Một phần tư)",
       "bread_kofte_three_quarter": "Bánh mì với Köfte (Ba phần tư)",
@@ -1631,6 +1646,7 @@ const resources = {
       "welcome": "환영합니다!",
       
       "grills": "구이",
+      "kokorec": "빵과 코코레크",
       "bread_kofte_half": "빵과 코프테 (반)",
       "bread_kofte_quarter": "빵과 코프테 (사분의 일)",
       "bread_kofte_three_quarter": "빵과 코프테 (사분의 삼)",
@@ -1705,6 +1721,7 @@ const resources = {
       "welcome": "خوش آمدید!",
       
       "grills": "گوساله",
+      "kokorec": "نان با کوکوریک",
       "bread_kofte_half": "نان با کوفته (نیم)",
       "bread_kofte_quarter": "نان با کوفته (چهارم)",
       "bread_kofte_three_quarter": "نان با کوفته (سه چهارم)",
@@ -1779,6 +1796,7 @@ const resources = {
       "welcome": "ਸ਼ਰਾਹੀ ਹੈ!",
       
       "grills": "ਗਰਲ",
+      "kokorec": "ਕੋਕੋਰੇਕ ਸਹ ਰੂਟੀ",
       "bread_kofte_half": "ਰੂਟੀ ਸਹ ਕੋਫਤੇ (ਅਧਾ)",
       "bread_kofte_quarter": "ਰੂਟੀ ਸਹ ਕੋਫਤੇ (ਚਾਰਮ)",
       "bread_kofte_three_quarter": "ਰੂਟੀ ਸਹ ਕੋਫਤੇ (ਤਿਨ ਚਾਰਮ)",
@@ -1853,6 +1871,7 @@ const resources = {
       "welcome": "સ્વાગત છે!",
       
       "grills": "ગ્રિલ",
+      "kokorec": "કોકોરેક સાથે રોટી",
       "bread_kofte_half": "રોટી સાથે કોફ્તે (અડધુ)",
       "bread_kofte_quarter": "રોટી સાથે કોફ્તે (એક ચોથાં)",
       "bread_kofte_three_quarter": "રોટી સાથે કોફ્તે (ત્રણ ચોથાં)",
@@ -1927,6 +1946,7 @@ const resources = {
       "welcome": "സ്വാഗതം!",
       
       "grills": "ഗ്രില്",
+      "kokorec": "കൊക്കോറെക്ക് സഹ റൂടി",
       "bread_kofte_half": "റൂടി കൊഫ്റ്റേയുടെ പുറക്ക് (അര്ധം)",
       "bread_kofte_quarter": "റൂടി കൊഫ്റ്റേയുടെ പുറക്ക് (നാലിന്നിമിഷം)",
       "bread_kofte_three_quarter": "റൂടി കൊഫ്റ്റേയുടെ പുറക്ക് (മൂന്നിന്നിമിഷം)",
@@ -2001,6 +2021,7 @@ const resources = {
       "welcome": "Ласкаво просимо!",
       
       "grills": "Гриль",
+      "kokorec": "Хліб з кокорек",
       "bread_kofte_half": "Хліб з крофте (Половина)",
       "bread_kofte_quarter": "Хліб з крофте (Чверть)",
       "bread_kofte_three_quarter": "Хліб з крофте (Три чверті)",

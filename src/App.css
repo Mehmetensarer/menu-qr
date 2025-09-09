@@ -1010,3 +1010,122 @@
 .dark-theme .detail-description {
   color: #bdc3c7;
 }
+
+/* Ana Menü Stilleri */
+.main-menu {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.menu-category-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 300px !important;
+  min-height: 300px !important;
+  max-height: 300px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-theme .menu-category-card {
+  background: #2c3e50;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.menu-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .menu-category-card:hover {
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+}
+
+.category-image {
+  width: 100%;
+  height: 200px !important;
+  min-height: 200px !important;
+  max-height: 200px !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.category-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  font-size: 48px;
+  color: #6c757d;
+}
+
+.dark-theme .category-placeholder {
+  background-color: #495057;
+  color: #adb5bd;
+}
+
+.category-card-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #2c3e50;
+  height: 100px !important;
+  min-height: 100px !important;
+  max-height: 100px !important;
+}
+
+.dark-theme .category-card-title {
+  color: #ecf0f1;
+}
+
+/* Mobil Responsive */
+@media (max-width: 768px) {
+  .menu-grid {
+    gap: 15px;
+  }
+  
+  .menu-category-card {
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
+  }
+  
+  .category-image {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+  }
+  
+  .category-card-title {
+    font-size: 16px;
+    padding: 15px 8px;
+    height: 100px !important;
+    min-height: 100px !important;
+    max-height: 100px !important;
+  }
+}
