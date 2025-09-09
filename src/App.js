@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import './i18n';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,16 @@ function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Sayfa yüklendiğinde loading'i kapat
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500); // 1.5 saniye loading göster
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleLanguageChange = (e) => {
     const lang = e.target.value;
@@ -196,6 +206,21 @@ function App() {
       </div>
     </div>
   );
+
+  // Loading Component
+  if (isLoading) {
+    return (
+      <div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+        <div className="loading-container">
+          <div className="loading-spinner">
+            <div className="spinner"></div>
+            <div className="loading-text">{t('welcome')}</div>
+            <div className="loading-subtitle">Köfteci MELIH</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
