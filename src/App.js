@@ -161,28 +161,28 @@ function App() {
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('snacks')}>
           <div className="category-image">
-            <img src="/images/plain_kofte.jpg" alt="Atıştırmalıklar" className="category-img" />
+            <div className="category-placeholder">🍟</div>
           </div>
           <h3 className="category-card-title">{t('snacks')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('piyaz')}>
           <div className="category-image">
-            <img src="/images/plain_kofte.jpg" alt="Piyaz (Salad)" className="category-img" />
+            <div className="category-placeholder">🥗</div>
           </div>
           <h3 className="category-card-title">{t('piyaz')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('cold_drinks')}>
           <div className="category-image">
-            <img src="/images/plain_kofte.jpg" alt="Soğuk İçecekler" className="category-img" />
+            <div className="category-placeholder">🥤</div>
           </div>
           <h3 className="category-card-title">{t('cold_drinks')}</h3>
         </div>
         
         <div className="menu-category-card" onClick={() => handleCategoryClick('hot_drinks')}>
           <div className="category-image">
-            <img src="/images/plain_kofte.jpg" alt="Sıcak İçecekler" className="category-img" />
+            <div className="category-placeholder">☕</div>
           </div>
           <h3 className="category-card-title">{t('hot_drinks')}</h3>
         </div>
